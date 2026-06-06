@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Molina Christian Schools (LMCS) — Educación bilingüe de excelencia basada en principios cristianos. Admisión 2027 abierta." />
+  <meta name="keywords" content="colegio cristiano Lima, educación bilingüe, La Molina, LMCS, admisión 2027, colegio internacional" />
+  <meta property="og:title" content="LMCS | Formando Líderes para Transformar el Mundo" />
+  <meta property="og:description" content="Educación bilingüe de excelencia basada en principios cristianos." />
+  <meta property="og:type" content="website" />
+  <title>LMCS | La Molina Christian Schools — Admisión 2027</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:  { DEFAULT: '#0B1C3D', 50: '#E8EDF5', 100: '#C5D0E6', 200: '#8FA5CC', 300: '#5779B3', 400: '#2E5299', 500: '#0B1C3D', 600: '#091630', 700: '#061023', 800: '#040B17', 900: '#02050B' },
+            gold:  { DEFAULT: '#C9A84C', light: '#E8C97A', dark: '#A07830' },
+          },
+          fontFamily: {
+            poppins:    ['Poppins', 'sans-serif'],
+            inter:      ['Inter', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="lmcs.css" />
+</head>
+<body class="font-inter bg-white overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════════════ -->
+  <div id="loader" class="fixed inset-0 z-[9999] bg-navy flex flex-col items-center justify-center">
+    <div class="loader-logo">
+      <div class="loader-cross"></div>
+      <div class="loader-text font-montserrat font-bold text-white text-2xl tracking-widest mt-4">LMCS</div>
+      <div class="loader-sub font-inter text-gold text-xs tracking-[0.3em] mt-1">LA MOLINA CHRISTIAN SCHOOLS</div>
+    </div>
+    <div class="loader-bar mt-8"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="nav-logo-icon">
+          <i class="fas fa-cross text-gold text-xs"></i>
+        </div>
+        <div>
+          <div class="font-montserrat font-bold text-white text-xl leading-none tracking-wider group-hover:text-gold transition-colors">LMCS</div>
+          <div class="font-inter text-white/60 text-[9px] tracking-widest leading-none">LA MOLINA CHRISTIAN SCHOOLS</div>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#nosotros"  class="nav-link">Nosotros</a>
+        <a href="#propuesta" class="nav-link">Propuesta Educativa</a>
+        <a href="#bilingue"  class="nav-link">Bilingüe</a>
+        <a href="#vida"      class="nav-link">Vida Escolar</a>
+        <a href="#contacto"  class="nav-link">Contacto</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="#admision" class="btn-gold">Admisión 2027</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menú">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu lg:hidden">
+      <div class="flex flex-col gap-2 p-6">
+        <a href="#nosotros"  class="mobile-nav-link">Nosotros</a>
+        <a href="#propuesta" class="mobile-nav-link">Propuesta Educativa</a>
+        <a href="#bilingue"  class="mobile-nav-link">Bilingüe</a>
+        <a href="#vida"      class="mobile-nav-link">Vida Escolar</a>
+        <a href="#admision"  class="mobile-nav-link">Admisión 2027</a>
+        <a href="#contacto"  class="mobile-nav-link">Contacto</a>
+        <a href="#admision" class="btn-gold mt-4 text-center">Solicitar Información</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════ -->
+  <section id="inicio" class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- Video Background -->
+    <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&h=1080&fit=crop&q=80&auto=format">
+      <source src="" type="video/mp4" />
+    </video>
+
+    <!-- Animated Gradient Fallback -->
+    <div class="hero-gradient-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Admission Badge -->
+    <div class="admission-badge" data-aos="fade-down" data-aos-delay="800">
+      <span class="badge-dot"></span>
+      <span class="font-poppins font-semibold text-sm">✨ Admisión 2027 Abierta</span>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <div data-aos="fade-up" data-aos-delay="200">
+        <div class="hero-eyebrow font-montserrat">
+          <i class="fas fa-cross text-gold mr-2"></i>
+          La Molina Christian Schools
+        </div>
+      </div>
+
+      <h1 class="font-poppins font-black text-white leading-tight mt-6" data-aos="fade-up" data-aos-delay="400">
+        Formando Líderes<br />
+        <span class="text-gradient-gold">para Transformar</span><br />
+        el Mundo
+      </h1>
+
+      <p class="font-inter text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mt-6 leading-relaxed" data-aos="fade-up" data-aos-delay="600">
+        Educación bilingüe de excelencia basada en principios cristianos<br class="hidden sm:block" />
+        para las generaciones del futuro.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10" data-aos="fade-up" data-aos-delay="800">
+        <a href="#admision" class="btn-hero-primary">
+          <i class="fas fa-paper-plane mr-2"></i>
+          Solicitar Información
+        </a>
+        <a href="#tour" class="btn-hero-secondary">
+          <i class="fas fa-play mr-2"></i>
+          Agenda una Visita
+        </a>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats grid grid-cols-3 gap-4 max-w-lg mx-auto mt-16" data-aos="fade-up" data-aos-delay="1000">
+        <div class="hero-stat">
+          <div class="font-poppins font-bold text-gold text-2xl sm:text-3xl">24+</div>
+          <div class="font-inter text-white/70 text-xs sm:text-sm">Años de experiencia</div>
+        </div>
+        <div class="hero-stat border-x border-white/20">
+          <div class="font-poppins font-bold text-gold text-2xl sm:text-3xl">100%</div>
+          <div class="font-inter text-white/70 text-xs sm:text-sm">Bilingüe</div>
+        </div>
+        <div class="hero-stat">
+          <div class="font-poppins font-bold text-gold text-2xl sm:text-3xl">3</div>
+          <div class="font-inter text-white/70 text-xs sm:text-sm">Niveles educativos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ¿POR QUÉ ELEGIR LMCS?
+  ══════════════════════════════════════════════ -->
+  <section id="porque" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="section-eyebrow">Nuestra Diferencia</div>
+        <h2 class="section-title">¿Por qué elegir <span class="text-navy">LMCS</span>?</h2>
+        <p class="section-subtitle">Una comunidad educativa única que forma líderes íntegros desde los primeros años.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-icon bg-navy/10">
+            <i class="fas fa-medal text-navy text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">24+ Años de Excelencia</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">Más de dos décadas formando generaciones de líderes con impacto en la sociedad peruana y global.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon bg-gold/10">
+            <i class="fas fa-language text-gold text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">Educación 100% Bilingüe</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">Inmersión total en inglés desde Inicial, con metodologías internacionales que garantizan fluidez real.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon bg-navy/10">
+            <i class="fas fa-cross text-navy text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">Valores Cristianos</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">La fe como fundamento de todo aprendizaje. Formamos el carácter con principios bíblicos sólidos.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon bg-gold/10">
+            <i class="fas fa-brain text-gold text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">Excelencia Académica</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">Currículo riguroso de nivel internacional que prepara a nuestros estudiantes para las mejores universidades.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon bg-navy/10">
+            <i class="fas fa-star text-navy text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">Desarrollo Integral</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">Arte, deporte, ciencia y espiritualidad en perfecta armonía para formar seres humanos completos.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="why-icon bg-gold/10">
+            <i class="fas fa-heart text-gold text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-navy text-xl mt-4">Comunidad Familiar</h3>
+          <p class="font-inter text-gray-600 mt-2 leading-relaxed">Una familia que se cuida mutuamente. Padres, maestros y estudiantes unidos por una misma visión.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NUESTRA ESENCIA
+  ══════════════════════════════════════════════ -->
+  <section id="nosotros" class="py-24 bg-navy relative overflow-hidden">
+    <div class="essence-bg-pattern"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Image Column -->
+        <div class="relative" data-aos="fade-right">
+          <div class="essence-image-frame">
+            <img
+              src="img/lmcs_photo_5.jpg"
+              alt="Alumnas LMCS en la biblioteca"
+              class="essence-img-placeholder"
+              loading="lazy"
+            />
+            <div class="essence-badge-card glass-card-dark">
+              <i class="fas fa-cross text-gold text-xl"></i>
+              <div>
+                <div class="font-poppins font-bold text-white text-sm">Fundado en 2001</div>
+                <div class="font-inter text-white/60 text-xs">Sol de La Molina, Lima</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating verse -->
+          <div class="essence-verse glass-card-dark" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-quote-left text-gold text-2xl mb-3"></i>
+            <p class="font-poppins italic text-white text-lg leading-relaxed">"El temor de Jehová es el principio de la sabiduría."</p>
+            <div class="font-inter text-gold text-sm mt-3 font-semibold">— Proverbios 9:10</div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div data-aos="fade-left">
+          <div class="section-eyebrow-light">Nuestra Esencia</div>
+          <h2 class="font-poppins font-bold text-white text-4xl sm:text-5xl mt-3 leading-tight">
+            Más de dos décadas<br /><span class="text-gradient-gold">transformando vidas</span>
+          </h2>
+
+          <div class="mt-8 space-y-6">
+            <div class="essence-item">
+              <div class="essence-item-icon"><i class="fas fa-history text-gold"></i></div>
+              <div>
+                <h3 class="font-poppins font-semibold text-white text-lg">Historia</h3>
+                <p class="font-inter text-white/70 mt-1 leading-relaxed">Desde 2001, LMCS ha sido un faro educativo en La Molina, formando generaciones con el compromiso de brindar la mejor educación bilingüe con fundamento cristiano en el Perú.</p>
+              </div>
+            </div>
+
+            <div class="essence-item">
+              <div class="essence-item-icon"><i class="fas fa-bullseye text-gold"></i></div>
+              <div>
+                <h3 class="font-poppins font-semibold text-white text-lg">Misión</h3>
+                <p class="font-inter text-white/70 mt-1 leading-relaxed">Brindar una educación integral de excelencia, fundamentada en valores bíblicos y metodologías internacionales que formen líderes comprometidos con Dios, la familia y la sociedad.</p>
+              </div>
+            </div>
+
+            <div class="essence-item">
+              <div class="essence-item-icon"><i class="fas fa-eye text-gold"></i></div>
+              <div>
+                <h3 class="font-poppins font-semibold text-white text-lg">Visión</h3>
+                <p class="font-inter text-white/70 mt-1 leading-relaxed">Ser el referente de educación cristiana bilingüe de mayor prestigio en el Perú, reconocidos por la excelencia académica y el impacto transformador de nuestros egresados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 mt-10">
+            <div class="essence-principle">
+              <i class="fas fa-book-open text-gold text-xl mb-2"></i>
+              <div class="font-inter text-white/80 text-xs text-center">Fe Bíblica</div>
+            </div>
+            <div class="essence-principle">
+              <i class="fas fa-globe text-gold text-xl mb-2"></i>
+              <div class="font-inter text-white/80 text-xs text-center">Visión Global</div>
+            </div>
+            <div class="essence-principle">
+              <i class="fas fa-users text-gold text-xl mb-2"></i>
+              <div class="font-inter text-white/80 text-xs text-center">Comunidad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROPUESTA EDUCATIVA
+  ══════════════════════════════════════════════ -->
+  <section id="propuesta" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="section-eyebrow">Niveles Educativos</div>
+        <h2 class="section-title">Propuesta <span class="text-navy">Educativa</span></h2>
+        <p class="section-subtitle">Un camino de formación integral desde los primeros años hasta el ingreso universitario.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-center mb-10" data-aos="fade-up">
+        <div class="edu-tabs">
+          <button class="edu-tab active" data-tab="inicial">
+            <i class="fas fa-baby mr-2"></i>Inicial
+          </button>
+          <button class="edu-tab" data-tab="primaria">
+            <i class="fas fa-child mr-2"></i>Primaria
+          </button>
+          <button class="edu-tab" data-tab="secundaria">
+            <i class="fas fa-user-graduate mr-2"></i>Secundaria
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Panels -->
+      <div id="tab-inicial" class="edu-panel active" data-aos="fade-up">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="edu-img-container">
+            <img
+              src="img/lmcs_photo_3.jpg"
+              alt="Nivel Inicial — Niño con bloques de letras"
+              class="edu-img-placeholder"
+              loading="lazy"
+            />
+            <div class="edu-level-badge">3 - 5 años</div>
+          </div>
+          <div>
+            <h3 class="font-poppins font-bold text-navy text-3xl">Nivel Inicial</h3>
+            <p class="font-inter text-gray-600 mt-4 leading-relaxed">Los primeros años son fundamentales. Nuestro programa de Inicial sienta las bases del aprendizaje a través del juego, la exploración y el amor a Dios.</p>
+            <div class="space-y-4 mt-6">
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Aprendizaje basado en descubrimiento y exploración</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Desarrollo socioemocional y habilidades blandas</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Inglés como segunda lengua desde los 3 años</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Formación en valores y principios bíblicos</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Estimulación temprana multisensorial</span></div>
+            </div>
+            <a href="#admision" class="btn-navy mt-8 inline-flex items-center gap-2">
+              Solicitar información <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-primaria" class="edu-panel" data-aos="fade-up">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="edu-img-container">
+            <img
+              src="img/lmcs_photo_2.jpg"
+              alt="Nivel Primaria — Maestra con estudiante"
+              class="edu-img-placeholder"
+              loading="lazy"
+            />
+            <div class="edu-level-badge">6 - 11 años</div>
+          </div>
+          <div>
+            <h3 class="font-poppins font-bold text-navy text-3xl">Nivel Primaria</h3>
+            <p class="font-inter text-gray-600 mt-4 leading-relaxed">Desarrollamos el pensamiento crítico y la curiosidad intelectual, preparando a nuestros estudiantes para desafíos académicos superiores con confianza y fe.</p>
+            <div class="space-y-4 mt-6">
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Pensamiento crítico y resolución de problemas</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Tecnología educativa e innovación digital</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Liderazgo cristiano desde temprana edad</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Inglés avanzado con certificaciones internacionales</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Programas de ciencia, arte y deporte</span></div>
+            </div>
+            <a href="#admision" class="btn-navy mt-8 inline-flex items-center gap-2">
+              Solicitar información <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-secundaria" class="edu-panel" data-aos="fade-up">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="edu-img-container">
+            <img
+              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=360&fit=crop&q=80&auto=format"
+              alt="Nivel Secundaria — Jóvenes estudiantes"
+              class="edu-img-placeholder"
+              loading="lazy"
+            />
+            <div class="edu-level-badge">12 - 17 años</div>
+          </div>
+          <div>
+            <h3 class="font-poppins font-bold text-navy text-3xl">Nivel Secundaria</h3>
+            <p class="font-inter text-gray-600 mt-4 leading-relaxed">Preparamos a los futuros líderes del Perú y el mundo. Nuestro programa de Secundaria combina rigor académico internacional con formación de carácter cristiano.</p>
+            <div class="space-y-4 mt-6">
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Preparación universitaria de alto nivel</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Liderazgo cristiano y servicio comunitario</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Competencias globales y ciudadanía mundial</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Inglés avanzado — Cambridge y TOEFL</span></div>
+              <div class="edu-feature"><i class="fas fa-check-circle text-gold mr-3"></i><span>Orientación vocacional y proyecto de vida</span></div>
+            </div>
+            <a href="#admision" class="btn-navy mt-8 inline-flex items-center gap-2">
+              Solicitar información <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EDUCACIÓN BILINGÜE
+  ══════════════════════════════════════════════ -->
+  <section id="bilingue" class="py-24 bg-white relative overflow-hidden">
+    <div class="bilingual-bg"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div data-aos="fade-right">
+          <div class="section-eyebrow">Programa Internacional</div>
+          <h2 class="font-poppins font-bold text-navy text-4xl sm:text-5xl mt-3 leading-tight">
+            Educación<br /><span class="text-gradient-blue">100% Bilingüe</span>
+          </h2>
+          <p class="font-inter text-gray-600 mt-6 text-lg leading-relaxed">
+            Nuestro programa bilingüe garantiza que cada estudiante desarrolle plena competencia en inglés y español, abriendo puertas a oportunidades globales.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="bilingual-card">
+              <i class="fas fa-comments text-gold text-2xl mb-3"></i>
+              <h4 class="font-poppins font-semibold text-navy">English Immersion</h4>
+              <p class="font-inter text-gray-600 text-sm mt-1">Total immersion desde el primer día en un ambiente natural y motivador.</p>
+            </div>
+            <div class="bilingual-card">
+              <i class="fas fa-microphone text-gold text-2xl mb-3"></i>
+              <h4 class="font-poppins font-semibold text-navy">Communication Skills</h4>
+              <p class="font-inter text-gray-600 text-sm mt-1">Oratoria, debate y expresión oral en ambos idiomas con confianza.</p>
+            </div>
+            <div class="bilingual-card">
+              <i class="fas fa-globe text-gold text-2xl mb-3"></i>
+              <h4 class="font-poppins font-semibold text-navy">Global Citizenship</h4>
+              <p class="font-inter text-gray-600 text-sm mt-1">Perspectiva intercultural y conciencia global desde temprana edad.</p>
+            </div>
+            <div class="bilingual-card">
+              <i class="fas fa-certificate text-gold text-2xl mb-3"></i>
+              <h4 class="font-poppins font-semibold text-navy">International Certificates</h4>
+              <p class="font-inter text-gray-600 text-sm mt-1">Preparación para Cambridge, TOEFL y otras certificaciones reconocidas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div data-aos="fade-left">
+          <div class="bilingual-stats-panel">
+            <div class="bilingual-stat-row" data-aos="fade-up" data-aos-delay="100">
+              <div class="bilingual-stat-icon"><i class="fas fa-star text-gold"></i></div>
+              <div class="flex-1">
+                <div class="flex justify-between mb-2">
+                  <span class="font-poppins font-semibold text-navy">Nivel de Inglés Alcanzado</span>
+                  <span class="font-poppins font-bold text-gold">95%</span>
+                </div>
+                <div class="stat-bar"><div class="stat-bar-fill" style="--w:95%"></div></div>
+              </div>
+            </div>
+            <div class="bilingual-stat-row" data-aos="fade-up" data-aos-delay="200">
+              <div class="bilingual-stat-icon"><i class="fas fa-graduation-cap text-gold"></i></div>
+              <div class="flex-1">
+                <div class="flex justify-between mb-2">
+                  <span class="font-poppins font-semibold text-navy">Certificaciones Internacionales</span>
+                  <span class="font-poppins font-bold text-gold">88%</span>
+                </div>
+                <div class="stat-bar"><div class="stat-bar-fill" style="--w:88%"></div></div>
+              </div>
+            </div>
+            <div class="bilingual-stat-row" data-aos="fade-up" data-aos-delay="300">
+              <div class="bilingual-stat-icon"><i class="fas fa-university text-gold"></i></div>
+              <div class="flex-1">
+                <div class="flex justify-between mb-2">
+                  <span class="font-poppins font-semibold text-navy">Ingreso a Universidades de Prestigio</span>
+                  <span class="font-poppins font-bold text-gold">98%</span>
+                </div>
+                <div class="stat-bar"><div class="stat-bar-fill" style="--w:98%"></div></div>
+              </div>
+            </div>
+            <div class="bilingual-stat-row" data-aos="fade-up" data-aos-delay="400">
+              <div class="bilingual-stat-icon"><i class="fas fa-globe-americas text-gold"></i></div>
+              <div class="flex-1">
+                <div class="flex justify-between mb-2">
+                  <span class="font-poppins font-semibold text-navy">Satisfacción de Padres de Familia</span>
+                  <span class="font-poppins font-bold text-gold">97%</span>
+                </div>
+                <div class="stat-bar"><div class="stat-bar-fill" style="--w:97%"></div></div>
+              </div>
+            </div>
+
+            <!-- Feature flags -->
+            <div class="grid grid-cols-2 gap-3 mt-6">
+              <div class="bilingual-flag"><i class="fas fa-check text-gold mr-2"></i>Cambridge Aligned</div>
+              <div class="bilingual-flag"><i class="fas fa-check text-gold mr-2"></i>Native Speakers</div>
+              <div class="bilingual-flag"><i class="fas fa-check text-gold mr-2"></i>TOEFL Prep</div>
+              <div class="bilingual-flag"><i class="fas fa-check text-gold mr-2"></i>Global Exchange</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       VIDA ESCOLAR – GALERÍA
+  ══════════════════════════════════════════════ -->
+  <section id="vida" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12" data-aos="fade-up">
+        <div class="section-eyebrow">Campus &amp; Actividades</div>
+        <h2 class="section-title">Vida <span class="text-navy">Escolar</span></h2>
+        <p class="section-subtitle">Un ambiente vibrante donde el aprendizaje, el deporte, el arte y la fe se entrelazan cada día.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10" data-aos="fade-up">
+        <button class="gallery-filter active" data-filter="all">Todos</button>
+        <button class="gallery-filter" data-filter="academic">Académico</button>
+        <button class="gallery-filter" data-filter="sports">Deportes</button>
+        <button class="gallery-filter" data-filter="arts">Arte &amp; Música</button>
+        <button class="gallery-filter" data-filter="science">Ciencia</button>
+        <button class="gallery-filter" data-filter="spiritual">Espiritual</button>
+        <button class="gallery-filter" data-filter="events">Eventos</button>
+      </div>
+
+      <!-- Masonry Gallery -->
+      <div class="gallery-grid" id="gallery-grid" data-aos="fade-up">
+        <div class="gallery-item" data-category="academic">
+          <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=400&h=200&fit=crop&q=80&auto=format" alt="Aulas Modernas LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Académico</span></div>
+        </div>
+        <div class="gallery-item tall" data-category="sports">
+          <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=412&fit=crop&q=80&auto=format" alt="Deportes LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Deportes</span></div>
+        </div>
+        <div class="gallery-item" data-category="arts">
+          <img src="img/lmcs_photo_4.jpg" alt="Música LMCS — Clase de bajo" loading="lazy" />
+          <div class="gallery-overlay"><span>Arte &amp; Música</span></div>
+        </div>
+        <div class="gallery-item" data-category="science">
+          <img src="img/lmcs_photo_1.jpg" alt="Laboratorio de Ciencias LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Ciencia</span></div>
+        </div>
+        <div class="gallery-item tall" data-category="spiritual">
+          <img src="https://images.unsplash.com/photo-1438232992991-995b671e4013?w=400&h=412&fit=crop&q=80&auto=format" alt="Worship LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Espiritual</span></div>
+        </div>
+        <div class="gallery-item" data-category="events">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=200&fit=crop&q=80&auto=format" alt="Graduación LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Eventos</span></div>
+        </div>
+        <div class="gallery-item" data-category="sports">
+          <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=400&h=200&fit=crop&q=80&auto=format" alt="Natación LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Deportes</span></div>
+        </div>
+        <div class="gallery-item" data-category="academic">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=200&fit=crop&q=80&auto=format" alt="Tecnología educativa LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Académico</span></div>
+        </div>
+        <div class="gallery-item" data-category="arts">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=200&fit=crop&q=80&auto=format" alt="Arte LMCS" loading="lazy" />
+          <div class="gallery-overlay"><span>Arte</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════════════ -->
+  <section id="testimonios" class="py-24 bg-navy relative overflow-hidden">
+    <div class="essence-bg-pattern opacity-30"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="section-eyebrow-light">Comunidad LMCS</div>
+        <h2 class="font-poppins font-bold text-white text-4xl sm:text-5xl mt-3">
+          Lo que dice nuestra <span class="text-gradient-gold">familia</span>
+        </h2>
+      </div>
+
+      <div class="swiper testimonios-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper pb-12">
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote"><i class="fas fa-quote-left text-gold text-2xl"></i></div>
+              <p class="font-inter text-white/85 text-lg leading-relaxed mt-4">"LMCS transformó la vida de mis hijos. No solo aprendieron un excelente inglés, sino que crecieron en fe y valores que los acompañarán toda la vida. Es mucho más que un colegio, es una familia."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-gold/20"><i class="fas fa-user text-gold"></i></div>
+                <div>
+                  <div class="font-poppins font-semibold text-white">María González</div>
+                  <div class="font-inter text-white/60 text-sm">Madre de familia · 3 hijos en LMCS</div>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote"><i class="fas fa-quote-left text-gold text-2xl"></i></div>
+              <p class="font-inter text-white/85 text-lg leading-relaxed mt-4">"Estudié en LMCS toda mi vida escolar y hoy soy ingeniero en una empresa internacional. El inglés y los valores que me enseñaron fueron mi mayor ventaja competitiva. Eternamente agradecido."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-navy-200/20"><i class="fas fa-user text-gold"></i></div>
+                <div>
+                  <div class="font-poppins font-semibold text-white">Diego Ramírez</div>
+                  <div class="font-inter text-white/60 text-sm">Egresado 2018 · Ingeniero de Software</div>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote"><i class="fas fa-quote-left text-gold text-2xl"></i></div>
+              <p class="font-inter text-white/85 text-lg leading-relaxed mt-4">"Lo que más valoro de LMCS es la formación del carácter. Mi hija aprendió a ser una líder íntegra. Los maestros son genuinamente vocacionales y la comunidad de padres es extraordinaria."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-gold/20"><i class="fas fa-user text-gold"></i></div>
+                <div>
+                  <div class="font-poppins font-semibold text-white">Carmen Villanueva</div>
+                  <div class="font-inter text-white/60 text-sm">Madre de familia · Promoción 2025</div>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-quote"><i class="fas fa-quote-left text-gold text-2xl"></i></div>
+              <p class="font-inter text-white/85 text-lg leading-relaxed mt-4">"Estar en LMCS es increíble. Mis profesores me retan cada día a dar lo mejor de mí. Las clases de inglés son geniales y en el worship siento que Dios está presente. ¡Amo mi colegio!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar bg-navy-200/20"><i class="fas fa-user text-gold"></i></div>
+                <div>
+                  <div class="font-poppins font-semibold text-white">Valentina Torres</div>
+                  <div class="font-inter text-white/60 text-sm">Estudiante · 4to de Secundaria</div>
+                </div>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i><i class="fas fa-star text-gold"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination testimonios-pagination"></div>
+        <div class="swiper-button-prev testimonios-prev"></div>
+        <div class="swiper-button-next testimonios-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       LOGROS Y RESULTADOS
+  ══════════════════════════════════════════════ -->
+  <section id="logros" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="section-eyebrow">Resultados que Hablan</div>
+        <h2 class="section-title">Logros y <span class="text-navy">Reconocimientos</span></h2>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div class="counter-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="counter-icon"><i class="fas fa-award text-gold text-3xl"></i></div>
+          <div class="counter-number" data-target="24">0</div>
+          <div class="counter-suffix">+</div>
+          <div class="counter-label">Años de Experiencia</div>
+        </div>
+        <div class="counter-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="counter-icon"><i class="fas fa-users text-gold text-3xl"></i></div>
+          <div class="counter-number" data-target="3000">0</div>
+          <div class="counter-suffix">+</div>
+          <div class="counter-label">Estudiantes Formados</div>
+        </div>
+        <div class="counter-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="counter-icon"><i class="fas fa-graduation-cap text-gold text-3xl"></i></div>
+          <div class="counter-number" data-target="98">0</div>
+          <div class="counter-suffix">%</div>
+          <div class="counter-label">Ingreso Universitario</div>
+        </div>
+        <div class="counter-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="counter-icon"><i class="fas fa-globe text-gold text-3xl"></i></div>
+          <div class="counter-number" data-target="100">0</div>
+          <div class="counter-suffix">%</div>
+          <div class="counter-label">Educación Bilingüe</div>
+        </div>
+      </div>
+
+      <!-- Recognition Badges -->
+      <div class="flex flex-wrap justify-center gap-6" data-aos="fade-up">
+        <div class="recognition-badge"><i class="fas fa-certificate text-gold mr-2"></i>Cambridge Aligned School</div>
+        <div class="recognition-badge"><i class="fas fa-star text-gold mr-2"></i>Excelencia Académica 2024</div>
+        <div class="recognition-badge"><i class="fas fa-church text-gold mr-2"></i>Institución Cristiana Certificada</div>
+        <div class="recognition-badge"><i class="fas fa-globe text-gold mr-2"></i>International Bilingual Program</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ADMISIÓN 2027 (PRIORIDAD)
+  ══════════════════════════════════════════════ -->
+  <section id="admision" class="py-24 admission-section relative overflow-hidden">
+    <div class="admission-bg"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="admission-badge-large">
+          <span class="badge-dot-large"></span>
+          ✨ Vacantes Disponibles — Proceso Abierto
+        </div>
+        <h2 class="font-poppins font-black text-white text-4xl sm:text-6xl mt-6 leading-tight">
+          Admisión <span class="text-gradient-gold">2027</span>
+        </h2>
+        <p class="font-inter text-white/80 text-xl mt-4 max-w-2xl mx-auto">
+          El primer paso hacia una educación que transforma vidas. Inicia el proceso hoy.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Timeline -->
+        <div data-aos="fade-right">
+          <h3 class="font-poppins font-bold text-white text-2xl mb-8">Proceso de Admisión</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">1</div>
+              <div class="timeline-content">
+                <h4 class="font-poppins font-semibold text-white">Solicitud de Información</h4>
+                <p class="font-inter text-white/70 text-sm mt-1">Completa el formulario y recibe información personalizada sobre el proceso.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">2</div>
+              <div class="timeline-content">
+                <h4 class="font-poppins font-semibold text-white">Entrevista Familiar</h4>
+                <p class="font-inter text-white/70 text-sm mt-1">Conocemos a tu familia y compartimos nuestra visión educativa.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">3</div>
+              <div class="timeline-content">
+                <h4 class="font-poppins font-semibold text-white">Evaluación del Estudiante</h4>
+                <p class="font-inter text-white/70 text-sm mt-1">Evaluación de aptitudes académicas y habilidades para el nivel correspondiente.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">4</div>
+              <div class="timeline-content">
+                <h4 class="font-poppins font-semibold text-white">Asignación de Vacante</h4>
+                <p class="font-inter text-white/70 text-sm mt-1">Confirmación de la vacante disponible para tu hijo/a.</p>
+              </div>
+            </div>
+            <div class="timeline-item last">
+              <div class="timeline-dot golden">5</div>
+              <div class="timeline-content">
+                <h4 class="font-poppins font-semibold text-gold">¡Bienvenido a la Familia LMCS!</h4>
+                <p class="font-inter text-white/70 text-sm mt-1">Matrícula confirmada. Comienza una nueva etapa de excelencia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="admission-form-card" data-aos="fade-left">
+          <div class="text-center mb-6">
+            <h3 class="font-poppins font-bold text-navy text-2xl">Solicitar Información</h3>
+            <p class="font-inter text-gray-600 text-sm mt-1">Nuestro equipo te contactará en menos de 24 horas.</p>
+          </div>
+          <form id="admission-form" class="space-y-4">
+            <div class="form-group">
+              <label class="form-label">Nombre completo *</label>
+              <div class="form-input-wrapper">
+                <i class="fas fa-user form-icon"></i>
+                <input type="text" placeholder="Tu nombre completo" required class="form-input" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Correo electrónico *</label>
+              <div class="form-input-wrapper">
+                <i class="fas fa-envelope form-icon"></i>
+                <input type="email" placeholder="tu@correo.com" required class="form-input" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Celular / WhatsApp *</label>
+              <div class="form-input-wrapper">
+                <i class="fas fa-phone form-icon"></i>
+                <input type="tel" placeholder="+51 999 999 999" required class="form-input" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Nivel de interés</label>
+              <div class="form-input-wrapper">
+                <i class="fas fa-graduation-cap form-icon"></i>
+                <select class="form-input form-select">
+                  <option value="">Selecciona el nivel</option>
+                  <option>Inicial (3-5 años)</option>
+                  <option>Primaria (6-11 años)</option>
+                  <option>Secundaria (12-17 años)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mensaje</label>
+              <textarea placeholder="¿Tienes alguna pregunta o comentario?" rows="3" class="form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-heart mr-2"></i>
+              Quiero formar parte de la familia LMCS
+            </button>
+            <p class="text-center font-inter text-gray-500 text-xs">
+              <i class="fas fa-lock mr-1"></i>
+              Tu información está segura y nunca será compartida.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TOUR VIRTUAL
+  ══════════════════════════════════════════════ -->
+  <section id="tour" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12" data-aos="fade-up">
+        <div class="section-eyebrow">Conoce el Campus</div>
+        <h2 class="section-title">Tour <span class="text-navy">Virtual</span></h2>
+        <p class="section-subtitle">Recorre nuestras instalaciones de clase mundial y descubre los espacios donde tus hijos crecerán.</p>
+      </div>
+
+      <div class="swiper tour-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=300&fit=crop&q=80&auto=format" alt="Aulas Inteligentes LMCS" loading="lazy" class="tour-img-placeholder" />
+              <div class="tour-label">
+                <i class="fas fa-chalkboard-teacher mr-2 text-gold"></i>
+                <span class="font-poppins font-semibold text-white">Aulas Inteligentes</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="img/lmcs_photo_5.jpg" alt="Biblioteca LMCS" loading="lazy" class="tour-img-placeholder" />
+              <div class="tour-label">
+                <i class="fas fa-book mr-2 text-gold"></i>
+                <span class="font-poppins font-semibold text-white">Biblioteca Digital</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="img/lmcs_photo_1.jpg" alt="Laboratorios STEM LMCS" loading="lazy" class="tour-img-placeholder" />
+              <div class="tour-label">
+                <i class="fas fa-flask mr-2 text-gold"></i>
+                <span class="font-poppins font-semibold text-white">Laboratorios STEM</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&h=300&fit=crop&q=80&auto=format" alt="Áreas Deportivas LMCS" loading="lazy" class="tour-img-placeholder" />
+              <div class="tour-label">
+                <i class="fas fa-futbol mr-2 text-gold"></i>
+                <span class="font-poppins font-semibold text-white">Áreas Deportivas</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&h=300&fit=crop&q=80&auto=format" alt="Áreas Verdes LMCS" loading="lazy" class="tour-img-placeholder" />
+              <div class="tour-label">
+                <i class="fas fa-leaf mr-2 text-gold"></i>
+                <span class="font-poppins font-semibold text-white">Áreas Verdes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination tour-pagination"></div>
+        <div class="swiper-button-prev tour-prev"></div>
+        <div class="swiper-button-next tour-next"></div>
+      </div>
+
+      <div class="text-center mt-10" data-aos="fade-up">
+        <a href="#admision" class="btn-gold-outline">
+          <i class="fas fa-calendar-check mr-2"></i>
+          Agenda una visita presencial
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MAPA Y CONTACTO
+  ══════════════════════════════════════════════ -->
+  <section id="contacto" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="section-eyebrow">Encuéntranos</div>
+        <h2 class="section-title">Contáctanos &amp; <span class="text-navy">Visítanos</span></h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+        <!-- Contact Info -->
+        <div data-aos="fade-right">
+          <div class="space-y-6">
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt text-gold text-xl"></i></div>
+              <div>
+                <h4 class="font-poppins font-semibold text-navy">Dirección</h4>
+                <p class="font-inter text-gray-600 mt-1">Av. La Molina Este 3880<br />Sol de La Molina, Lima, Perú</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-phone text-gold text-xl"></i></div>
+              <div>
+                <h4 class="font-poppins font-semibold text-navy">Teléfonos</h4>
+                <p class="font-inter text-gray-600 mt-1">(01) 479 – 0000<br />+51 999 000 000</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-envelope text-gold text-xl"></i></div>
+              <div>
+                <h4 class="font-poppins font-semibold text-navy">Correo</h4>
+                <p class="font-inter text-gray-600 mt-1">admision@lmcs.pe<br />info@lmcs.pe</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fab fa-whatsapp text-gold text-xl"></i></div>
+              <div>
+                <h4 class="font-poppins font-semibold text-navy">WhatsApp</h4>
+                <a href="https://wa.me/51999000000" class="font-inter text-gold hover:text-gold-dark mt-1 block font-semibold">+51 999 000 000</a>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-clock text-gold text-xl"></i></div>
+              <div>
+                <h4 class="font-poppins font-semibold text-navy">Horarios de Atención</h4>
+                <p class="font-inter text-gray-600 mt-1">Lunes a Viernes: 7:00 am – 5:00 pm<br />Sábados: 8:00 am – 1:00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div data-aos="fade-left">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.3!2d-76.9!3d-12.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+La+Molina+Este+3880%2C+Lima!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Ubicación LMCS"
+              class="rounded-2xl"></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Av+La+Molina+Este+3880+Lima+Peru" target="_blank" rel="noopener noreferrer" class="btn-navy mt-4 inline-flex items-center gap-2">
+            <i class="fas fa-directions"></i> Cómo llegar
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER PREMIUM
+  ══════════════════════════════════════════════ -->
+  <footer class="bg-navy pt-20 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Newsletter Banner -->
+      <div class="newsletter-banner" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 class="font-poppins font-bold text-white text-xl">Recibe información sobre Admisión 2027</h3>
+            <p class="font-inter text-white/70 text-sm mt-1">Suscríbete y sé el primero en conocer las fechas de proceso.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Tu correo electrónico" class="newsletter-input" />
+            <button type="submit" class="newsletter-btn">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mt-16">
+
+        <!-- Brand -->
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="nav-logo-icon"><i class="fas fa-cross text-gold text-xs"></i></div>
+            <div>
+              <div class="font-montserrat font-bold text-white text-lg tracking-wider">LMCS</div>
+              <div class="font-inter text-white/50 text-[9px] tracking-widest">LA MOLINA CHRISTIAN SCHOOLS</div>
+            </div>
+          </div>
+          <p class="font-inter text-white/60 text-sm leading-relaxed">Formando líderes íntegros con excelencia académica y fe cristiana desde 2001.</p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Institución -->
+        <div>
+          <h4 class="footer-col-title">Institución</h4>
+          <ul class="footer-links">
+            <li><a href="#nosotros">Nuestra Historia</a></li>
+            <li><a href="#nosotros">Misión y Visión</a></li>
+            <li><a href="#porque">¿Por qué LMCS?</a></li>
+            <li><a href="#logros">Logros</a></li>
+            <li><a href="#vida">Vida Escolar</a></li>
+          </ul>
+        </div>
+
+        <!-- Admisión -->
+        <div>
+          <h4 class="footer-col-title">Admisión 2027</h4>
+          <ul class="footer-links">
+            <li><a href="#admision">Proceso de Admisión</a></li>
+            <li><a href="#propuesta">Nivel Inicial</a></li>
+            <li><a href="#propuesta">Nivel Primaria</a></li>
+            <li><a href="#propuesta">Nivel Secundaria</a></li>
+            <li><a href="#admision">Solicitar Información</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5114790000"><i class="fas fa-phone mr-2 text-gold text-xs"></i>(01) 479-0000</a></li>
+            <li><a href="mailto:admision@lmcs.pe"><i class="fas fa-envelope mr-2 text-gold text-xs"></i>admision@lmcs.pe</a></li>
+            <li><a href="https://wa.me/51999000000" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-2 text-gold text-xs"></i>WhatsApp</a></li>
+            <li class="text-white/50 text-sm mt-2">Av. La Molina Este 3880<br />Sol de La Molina, Lima</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="font-inter text-white/40 text-sm text-center">
+          © 2025 La Molina Christian Schools. Todos los derechos reservados.
+          <span class="mx-2">|</span>
+          <a href="#" class="hover:text-gold transition-colors">Política de Privacidad</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING BUTTONS
+  ══════════════════════════════════════════════ -->
+  <a href="https://wa.me/51999000000" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <a href="#admision" class="fab-admission" aria-label="Admisión 2027">
+    <i class="fas fa-star text-xs mb-0.5"></i>
+    <span class="font-poppins font-bold text-xs leading-none">2027</span>
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════════ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="lmcs.js"></script>
+</body>
+</html>
